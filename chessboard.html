@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .heading {
+            text-align: center;
+            margin: 20px ;
+            font-size: 34px;
+            font-weight: bold;
+            color: #769656;
+        }
+        .chessboard-container{
+            border:3px solid #000;
+            padding-left: 60px;
+            padding-right:60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 1px solid #000;
+        }
+        .square {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .white {
+            background-color: #eeeed2;
+        }
+        .black {
+            background-color: #769656;
+        }
+        .coin {
+            font-size: 42px;
+        }
+        .h1{
+            color: #000;
+            text-shadow: greenyellow;
+            font-size: 100px;
+            text-decoration: double;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>CHESSBOARD</h1></center>
+    <div class="chessboard-container">
+    <div class="heading">White Team</div>
+    <div class="chessboard">
+        <!-- First row -->
+        <div class="square white">♖</div>
+        <div class="square black">♘</div>
+        <div class="square white">♗</div>
+        <div class="square black">♕</div>
+        <div class="square white">♔</div>
+        <div class="square black">♗</div>
+        <div class="square white">♘</div>
+        <div class="square black">♖</div>
+        <!-- Second row -->
+        <div class="square black">♙</div>
+        <div class="square white">♙</div>
+        <div class="square black">♙</div>
+        <div class="square white">♙</div>
+        <div class="square black">♙</div>
+        <div class="square white">♙</div>
+        <div class="square black">♙</div>
+        <div class="square white">♙</div>
+        <!-- Empty rows -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <!-- Seventh row -->
+        <div class="square white">♟</div>
+        <div class="square black">♟</div>
+        <div class="square white">♟</div>
+        <div class="square black">♟</div>
+        <div class="square white">♟</div>
+        <div class="square black">♟</div>
+        <div class="square white">♟</div>
+        <div class="square black">♟</div>
+        <!-- Eighth row -->
+        <div class="square black">♜</div>
+        <div class="square white">♞</div>
+        <div class="square black">♝</div>
+        <div class="square white">♛</div>
+        <div class="square black">♚</div>
+        <div class="square white">♝</div>
+        <div class="square black">♞</div>
+        <div class="square white">♜</div>
+    </div>
+    <div class="heading">Black Team</div>
+    </div>
+</body>
+</html>
